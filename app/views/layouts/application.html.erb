@@ -2,48 +2,16 @@
 <html>
   <head>
     <title>MessageMe</title>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-      <div class="ui inverted menu">
-        <div class="ui container">
-          <a class="item">Browse</a>
-            <div class="ui simple dropdown link item">
-                <span class="text">Shopping</span>
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                  <div class="header">Categories</div>
-                  <div class="item">
-                    <i class="dropdown icon"></i>
-                    <span class="text">Clothing</span>
-                  <div class="menu">
-                      <div class="header">Mens</div>
-                      <div class="item">Shirts</div>
-                      <div class="item">Pants</div>
-                      <div class="item">Jeans</div>
-                      <div class="item">Shoes</div>
-                      <div class="divider"></div>
-                      <div class="header">Womens</div>
-                      <div class="item">Dresses</div>
-                      <div class="item">Shoes</div>
-                      <div class="item">Bags</div>
-                  </div>
-                </div>
-                  <div class="item">Home Goods</div>
-                  <div class="item">Bedroom</div>
-                  <div class="divider"></div>
-                  <div class="header">Order</div>
-                  <div class="item">Status</div>
-                  <div class="item">Cancellations</div>
-              </div>
-            </div>
-            <div class="right menu">
-              <a class="item"><div class="ui primary button">Sign Up</div></a>
-              <a class="item">Help</a>
-          </div>
+    <div class="ui inverted menu">
+      <div class="ui container">
+          <%= render 'layouts/navigation' %>
        </div>
     </div>
   <body>
