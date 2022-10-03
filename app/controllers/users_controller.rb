@@ -20,4 +20,14 @@ class UsersController < ApplicationController
 
   end
 
+private
+
+  # def set_user
+  #   @user = User.find(params[:id])
+  # end
+  #
+  # def params_user
+  #  params.require(:article).permit(:username, :password)
+  # end
+
 end
