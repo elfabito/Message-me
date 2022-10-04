@@ -25,7 +25,7 @@ class UsersController < ApplicationController
      if @user.save
        session[:user_id] = @user.id
        flash[:notice] = "Welcome to Message me, you have successfully Sign Up"
-       redirect_to articles_path
+       redirect_to root_path
      else
        render 'new'
    end
@@ -46,7 +46,7 @@ class UsersController < ApplicationController
       @user.destroy
       session[:user_id] = nil if @user == current_user
       flash[:notice] = "Account and all associated articles successfully deleted"
-      redirect_to articles_path
+      redirect_to root_path
 
      end
 
