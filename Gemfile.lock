@@ -111,6 +111,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.8-x64-mingw32)
       racc (~> 1.4)
+    pg (1.4.3)
+    pg (1.4.3-x64-mingw32)
     public_suffix (5.0.0)
     puma (3.12.6)
     racc (1.6.0)
@@ -217,6 +219,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.5)
   jquery-rails
+  pg (~> 1.4.3)
   puma (~> 3.11)
   rails (~> 5.2.8, >= 5.2.8.1)
   sass-rails (~> 5.0)
