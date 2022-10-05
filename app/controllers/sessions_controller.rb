@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       flash[:success] = "Logged in successfully"
-      redirect_to user
+      redirect_to root_path
     else
       flash.now[:error] = "There was something wrong with your login details"
       render 'new'
@@ -33,6 +33,6 @@ class SessionsController < ApplicationController
       flash[:error] = "You are already logged in"
       redirect_to root_path
     end
-    
+
   end
 end
