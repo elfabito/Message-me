@@ -2,4 +2,7 @@
   "name": "message_me",
   "private": true,
   "dependencies": {}
+  "scripts": {
+   "start": "node index.js"
+
 }
