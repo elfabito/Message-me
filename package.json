@@ -2,7 +2,7 @@
   "name": "message_me",
   "private": true,
   "dependencies": {}
-  "scripts": {
-   "start": "node index.js"
-
+  "engines": {
+  "node": "12.11.1"
+  }
 }
