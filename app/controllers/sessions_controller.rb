@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
 
     session[:user_id] = nil
     flash[:success] = "Logged out successfully"
-    redirect_to login_path
+    redirect_to signup_path
 
   end
 

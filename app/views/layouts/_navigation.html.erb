@@ -2,10 +2,12 @@
 <a class="item">Messages</a>
   <div class="right menu">
        <div class="ui simple dropdown link item">
-            <span class="text">Account</span>
-            <i class="dropdown icon"></i>
+         <% if logged_in? %>
+         <span class="text"> Profile [ <%= current_user.username %> ]  </span>
+              <i class="dropdown icon"></i>
               <div class="menu">
-                  <% if logged_in? %>
+
+                    <%= link_to "Edit", edit_user_path(current_user), class:"item" %>
                     <%= link_to "Logout", logout_path, method: :delete, class:"item" %>
                   <% else %>
                     <%= link_to "Login", login_path, class:"item" %>

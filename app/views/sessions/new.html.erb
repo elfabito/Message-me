@@ -24,13 +24,12 @@
         </div>
         <%= f.button "Login", class: "ui blue submit button" %>
         <% end %>
-      
+
     </div>
     <div class="middle aligned column">
-      <div class="ui big button">
-        <i class="signup blue icon"></i>
-        Sign Up
-      </div>
+
+        <%= link_to 'Sign up', signup_path, class: "ui blue submit button" %>
+      
     </div>
   </div>
   <div class="ui vertical divider">
