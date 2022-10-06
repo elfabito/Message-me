@@ -52,7 +52,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 # config.action_cable.disable_request_forgery_protection = true
-config.action_cable.allowed_request_origins = ['https://app-message-me.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['localhost:3000']
+  config.action_cable.url = "ws://localhost:3000/cable"
+# config.action_cable.allowed_request_origins = ['https://app-message-me.herokuapp.com']
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 

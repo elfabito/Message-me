@@ -10,13 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require rails-ujs
-//= require semantic-ui
 //= require jquery
 //= require activestorage
 //= require turbolinks
+//= require semantic-ui
 //= require_tree .
-//= require_self
 
 scroll_bottom = function() {
   if ($('#messages').length > 0) {

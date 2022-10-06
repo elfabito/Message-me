@@ -29,6 +29,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'hirb'
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
+# gem 'jquery-turbolinks'
+
+
+gem 'autoprefixer-rails', '~> 5.2.1.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
