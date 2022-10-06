@@ -16,6 +16,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require_self
 
 scroll_bottom = function() {
   if ($('#messages').length > 0) {
