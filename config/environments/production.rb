@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  # config.action_cable.disable_request_forgery_protection = true
+  #    config.action_cable.url = "ws://localhost:3000/cable"
+  #    config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+  #    config.action_cable.allowed_request_origins = /(\.dev$)|^localhost$/
   # Code is not reloaded between requests.
   config.cache_classes = true
 

@@ -6,6 +6,7 @@ class ChatroomController < ApplicationController
     @message = Message.new
     @messages = Message.custom_display
     @users = User.all
+
   end
 
 
