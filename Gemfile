@@ -30,7 +30,7 @@ gem 'hirb'
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
 # gem 'jquery-turbolinks'
-
+gem 'pg', '~> 1.4.3'
 
 gem 'autoprefixer-rails'
 # Use ActiveStorage variant
@@ -55,7 +55,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '~> 1.4.3'
+
 end
 
 group :test do
