@@ -1,4 +1,5 @@
 Rails.application.configure do
+    config.action_cable.disable_request_forgery_protection = true
   # Settings specified here will take precedence over those in config/application.rb.
   # config.action_cable.disable_request_forgery_protection = true
   #    config.action_cable.url = "ws://localhost:3000/cable"

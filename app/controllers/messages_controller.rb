@@ -8,7 +8,8 @@ before_action :require_user
     if message.save
       ActionCable.server.broadcast "chatroom_channel",{
                                     mod_message: message_render(message)}
-
+                                    
+head :bad_request
     end
 
   end
