@@ -1,7 +1,5 @@
 {
   "name": "message_me",
   "private": true,
-  "dependencies": {
-    "redis": "^0.7.3"
-  }
+  "dependencies": {}
 }

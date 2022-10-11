@@ -6,9 +6,7 @@ before_action :require_user
     message = current_user.messages.build(message_params)
 
     if message.save
-      ActionCable.server.broadcast "chatroom_channel",{
-                                    mod_message: message_render(message)}
-
+      render root_path
     end
 
   end
@@ -19,7 +17,4 @@ before_action :require_user
     params.require(:message).permit(:body)
   end
 
-  def message_render(message)
-    render(partial: 'message', locals: {message: message})
-  end
 end
