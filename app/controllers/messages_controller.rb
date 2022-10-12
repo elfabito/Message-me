@@ -6,7 +6,7 @@ before_action :require_user
     message = current_user.messages.build(message_params)
 
     if message.save
-      render root_path
+      redirect_to root_path
     end
 
   end
