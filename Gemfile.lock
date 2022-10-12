@@ -213,7 +213,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.5)
   jquery-rails
-  pg (~> 1.4.3)
+  pg (~> 1.4.4)
   puma (~> 3.11)
   rails (~> 5.2.8, >= 5.2.8.1)
   railties
